@@ -1,0 +1,17 @@
+h1 {
+text-align: center;
+}
+
+p {
+text-align: center;
+}
+
+ /* Style the video: 100% width and height to cover the entire window */
+#L {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+}
