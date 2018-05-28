@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>PS4 5.05 Exploit</title>
+ <!--<link rel="stylesheet" href="styles.css">-->
+</head>
+
+<body>
+<h1>Using PS4HEN (<u>H</u>omebrew <u>EN</u>abler) on 4.55 systems</h1>
+<p>PS4 "Jailbreak" requires very little to execute however it is not a permanant solution as it will be lost if you power down the console.In the event that the DNS goes down it is possible to self host the exploit (see section "Steps for hosting the exploit"). Before continuing you'll need to update your PS4 to firmware 5.05 if you haven't alrady. A USB drive with 500MB of free space is required.
+<ul><li>Download 5.05 firmware <a href="https://psarchive.darksoftware.xyz/505Retail.PUP">here</a></li>
+<li>On your USB create a folder named "PS4". Inside that folder, create another folder named "UPDATE". Place the "PS4UPDATE.PUP" file inside the "UPDATE" folder.</li>
+<li>Connect the USB storage device to your PS4™ system, and then from the function screen, select Settings (Settings) > [System Software Update].
+Follow the on-screen instructions to complete the update.</li>
+<li>If you have a pending 5.5x update boot into safe mode by turning on the PS4 while holding the power button until you hear a second beep. Use the "3 Update System Software"</li>
+</ul>
+</p><br><br>
+
+<h2>Steps for running the exploit</h2>
+<ol><li>Go to the PS4's settings and change the following
+<ul><li>Go to "Settings" -> "System" -> "Automatic Downloads". Disable all options
+</li>
+<li>Go to "Settings" -> "Power Saving Settings" -> "Set Features Available In Rest Mode". Disable "Stay Connected to the Internet"
+</li>
+<li>Go to "Settings" -> "Network" -> "Set Up Internet Connection" -> "Use Wi-Fi" or "Use a LAN Cable" depending on your connection type -> "Custom" and set the following:
+<ul><li>"IP Address Settings" -> "Automatic"</li>
+<li>"DHCP Host Name" -> "Do Not Specify"</li>
+<li>"DNS Settings" -> "Manual"</li>
+<li>"Primary DNS" _> "165.227.83.145"</li>
+<li>"Secondary DNS" -> "108.61.128.158"</li>
+<li>"MTU Settings" -> "Automatic"</li>
+<li>"Proxy Server" -> "Do Not Use"</li>
+<li>Click "circle" when prompted to "Test Internet Connection"</li>
+</ul></ul>
+<li>Go to "Settings" -> "User's Guide/Helpful Info" and open "User's Guide". This will launch the exploit selector</li>
+<li>Go to "4.55" and run "Disable Updates".</li>
+<li>Press "PS Button" and launch the exploit selector again.</li>
+<li>Go to "4.55" and run "HEN"</li>
+<ul><li>if you get an error saying "There is not enough free system memory." press "circle". It will retry the exploit. This can happen several times
+</li></ul>
+<li>Your system is now "jailbroken". Under the settings menu you'll now have "☆Debug Settings".</li>
+</ol><br><br>
+
+<h2>Post "jailbreak" set tools</h2>
+<h3>Web Browser</h3>If you don't have the web browser enabled it can be activated by running the exploit selector and running "Enable-Browser".
+<h3>Installing homebrew and installing backups</h3>To install .pkg files place them on the root of a USB device and go "Settings" -> "☆Debug Settings" -> "Game" -> "Package Installer" and select the .pkg you wish to install. On each boot all programmes will be locked. You will need to run HEN to unlock them. The lock may persist but they will be unlocked.
+<h3>Dumping games</h3>For the guide on dumping games click <a href="ps4_pkg_dumping.html">here</a>
+<br><br><br>
+
+<h2>Steps for hosting the exploit</h2>
+<h3>Required Files</h3>
+<ul><li>Windows and GNU/ Linux users will need <a href="https://github.com/Al-Azif/ps4-exploit-host/releases">ps4-exploit-host</a>
+</li>
+<li>Android users will need <a href="https://github.com/stooged/PS4_Serve2/files/1832084/Ps4_Serve2_v2_0.zip">PS4 serve2</a>. If you wish to inject your own payloads or need to enable the web browser you can also use <a href="http://reazer.bplaced.net/Files/PS4%20Tool.apk">PS4 Tool</a> and <a href="https://mega.nz/#!LpxXEY7T!1Sqdc61vY9BXu5AIUf5GKtiKieghndkbXYyFB1ZPKD8">EnableWebBrowser.bin</a>. The desktop version has this inbuilt however.</li>
+</ul>
+</ul>
+</li>
+<h3>Setting up and using the host.</h3>
+<b>Windows</b><ul><li>Run the .exe</li></ul>
+
+<b>GNU/ Linux</b>
+<ul><li>Rename "ps4-exploit-host" to "ps4-exploit-host.py" and run as root.
+<ul><li>Open a terminal window and type "su" then the root password</li>
+<li>Drag and drop "ps4-exploit-host.py" into the terminal window</li>
+</ul></li></ul>
+<b>Android</b><ul><li>Install "Ps4_Serve2_vx_x.apk". Open PS4 serve2</li></ul>
+Follow "Steps for running the exploit" but replace the "Primary DNS" in the first step with one that shows up in the host.
+<br><br><br>
+
+</body>
+
+</html>
