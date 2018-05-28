@@ -3,15 +3,31 @@
 
 <head>
 <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
- <title>PS4 Game Dumping and Repacking</title>
+ <title>PS4 Dumping Games</title>
  <!--<link rel="stylesheet" href="styles.css">-->
 </head>
 
 <body>
-<h1>PS4 Game Dumping and Repacking</h1>
-<p>Soon (tm).<br><br>
+<h1>Dumping and rebuilding PS4 games</h1>
+<p>PS4 games are fairly large so consider getting a 128GB USB for your temporary game dumps.<br><br>
 </p>
-<a href="ps4_455.html">PS4 =&lt4.55 "Jailbreak"</a><br>
+<h2>Required files</h2>
+<p>For Windows PCs you'll need xvortex's 
+<a href="https://github.com/xvortex/ps4-dumper-vtx/releases">All-in-one dumper</a><br><br>
 
+<h2>Dumping and Repacking games</h2>
+<ol><li>Install the game you wish to dunp on your console
+<li>Run "Dumper" from the Homebrew menu</li>
+<li>Press "PSButton" and open the game you want to dump. Press "PSButton" once the game has loaded to the main menu</li>
+<li>The console will shut down once the game has been dumped</li>
+<li>Insert the USB drive into your computer. Open "gengp4.exe" select the "CUSAxxxxx" folder on your USB drive and press "Generate .GP4". Once it's complete press "save .GP4"</li>
+<li>Source "Fake_PKG_Generator.rar" (MD5: 8dabea147b4a3c760cfe8a23d79f7825 SHA256: e0248b39ef547745c073d5a8136d5276d2ed131360a4ba04406ba9872221fb69) from some legitimate source (it is illegal to redistribute). Drag your .gp4 file onto "orbis-pub-gen.exe" and click "build".</li>
+<ul><li>If it fails to generate the .pkg try again.</li>
+</ul>
+<li>Turn on the console. Remove the game disc and uninstall the game</li>
+</ol>
+<h3>Installing homebrew and installing backups</h3>To install .pkg files place them on the root of a USB device and go "Settings" -> "☆Debug Settings" -> "Game" -> "Package Installer" and select the .pkg you wish to install. On each boot all programmes will be locked. You will need to run HEN to unlock them. The lock may persist but they will be unlocked.
 </body>
+
 </html>
+
