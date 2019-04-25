@@ -2,19 +2,13 @@ h1 {
 text-align: center;
 }
 
+
 p {
 text-align: center;
 }
 
+
 @media (orientation: landscape) {
-  img {
-    max-width:100%;
-    height:auto;
-
-    }
-}
-
-@media (orientation: portrait) {
     img {
         max-width:75%;
         height:auto;
@@ -24,3 +18,11 @@ text-align: center;
     }
 }
 
+
+@media (orientation: portrait) {
+  img {
+    max-width:100%;
+    height:auto;
+
+    }
+}
