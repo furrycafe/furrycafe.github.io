@@ -6,6 +6,7 @@ p {
 text-align: center;
 }
 
-img.autosize {
-  height: auto;
-  width: auto;
+img {
+    max-width:100%;
+    height:auto;
+}
