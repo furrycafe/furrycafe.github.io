@@ -6,7 +6,12 @@ p {
 text-align: center;
 }
 
-img {
+img.wideimage {
     max-width:100%;
+    height:auto;
+}
+
+img.normalimage {
+    max-width:75%;
     height:auto;
 }
