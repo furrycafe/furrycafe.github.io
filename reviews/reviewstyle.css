@@ -7,14 +7,14 @@ text-align: center;
 }
 
 @media (orientation: portrait) {
-  img.wideimage {
+  img {
     max-width:100%;
     height:auto;
     }
 }
 
 @media (orientation: landscape) {
-    img.normalimage {
+    img {
         max-width:75%;
         height:auto;
         margin-left: auto;
